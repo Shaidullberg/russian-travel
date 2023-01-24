@@ -1,0 +1,84 @@
+* {
+    outline: 1px solid red;
+}
+.root {
+    margin: 0 auto;
+    padding: 0;
+    color: #fff;
+    background-color: #2A2C2F;
+}
+/* Стили для шапки */
+.header {
+    margin: 0 auto;
+    padding: 28px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: calc(100% - 96px);
+}
+
+.logo_place_header {
+    max-width: 176px;
+    height: auto;
+
+}
+.header__lang-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: flex-end;
+    column-gap: 18px;
+}
+
+.header__lang-link {
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    font-weight: 400;
+}
+/* Вместо ссылок сделать радиокнопки с возможностью выбора)) */
+.header__lang-link_activity {
+}
+
+/* Конец стилей для шапки */
+/* аччало стилей для блока journey */
+.journey {
+    display: flex;
+    margin: 0 auto;
+    padding: 56px 0 0 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% - 296px);
+}
+.journey__title {
+    margin: 0 0 32px 0;
+    max-width: 720px;
+font-size: 96px;
+font-weight: 900;
+line-height: 100px;
+text-align: center;
+}
+.journey__subtitle {
+    margin: 0 0 64px 0;
+    max-width: 620px;
+font-size: 30px;
+font-weight: 400;
+line-height: 36px;
+text-align: center;
+
+}
+.journey__itinerary {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-align: left;    
+
+}
+.journey__picture {
+    max-width: 984px;
+    height: auto;
+    
+}
