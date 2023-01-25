@@ -17,15 +17,16 @@
     url("/Fonts/inter bold/Inter-Bold.woff2") format("woff2");
     font-weight: bold;
 } 
+
 .root {
     font-family: "Inter", Arial, serif;
     margin: 0 auto;
     padding: 0;
     color: #fff;
     background-color: #2A2C2F;
+    max-width: 1280px;
 }
 
-}
 /* Стили для шапки */
 .header {
     margin: 0 auto;
@@ -33,7 +34,9 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    max-width: 1184px;
     width: calc(100% - 96px);
+    box-sizing: border-box;
 }
 
 .logo_place_header {
@@ -59,9 +62,10 @@
 /* Вместо ссылок сделать радиокнопки с возможностью выбора)) */
 .header__lang-link_activity {
 }
-
 /* Конец стилей для шапки */
-/* аччало стилей для блока journey */
+
+/*Начало стилей для блока journey */
+/* Стили основного блока */
 .journey {
     display: flex;
     margin: 0 auto;
@@ -69,69 +73,131 @@
     box-sizing: border-box;
     flex-direction: column;
     align-items: center;
+    max-width: 984px;
     width: calc(100% - 296px);
 }
+/* Заголовок */
 .journey__title {
     margin: 0 0 32px 0;
     max-width: 720px;
-font-size: 96px;
-font-weight: 900;
-line-height: 100px;
-text-align: center;
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 100px;
+    text-align: center;
+    font-weight: bold
 }
+/* Подзаголовок */
 .journey__subtitle {
     margin: 0 0 64px 0;
     max-width: 620px;
-font-size: 30px;
-font-weight: 400;
-line-height: 36px;
-text-align: center;
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 36px;
+    text-align: center;
 
 }
+/* Блок с картинкой и подписью*/
 .journey__itinerary {
-    font-size: 10px;
-    font-weight: 400;
-    line-height: 14px;
-    letter-spacing: 1.5px;
-    text-align: left;    
-
+    margin: 0;
+    box-sizing: border-box;    
 }
+/* Картинка */
 .journey__picture {
+    margin: 0;
     max-width: 984px;
     height: auto;
-    
+}
+/* Подпись к картинке */
+.journey__signature {
+    margin: 6px 0 0 0;
+    font-size: 10px;
+    font-weight:normal;
+    line-height: 14px;
+    letter-spacing: 1.5px;
+    text-align: left;
 }
 /* Конец блока Journey */
 /* Начало блока summary */
+/* Стили блока */
 .summary {
     margin: 0 auto;
-    padding: 0;
+    padding: 92px 0 0 0 ;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
+    max-width: 984px;
     width: calc(100% - 296px);
+    box-sizing: border-box;
 }
+/* Стили заголовка */
 .summary__title {
-    margin: 0;
+    margin: 0 0 40px 0;
     max-width: 690px;
-font-size: 54px;
-font-weight: 900;
-line-height: 58px;
-text-align: left;
+    font-size: 54px;
+    font-weight: bold;
+    line-height: 58px;
+    text-align: left;
 
 }
+/* Стили текста */
 .summary__text {
-    margin: 0;
+    margin: 0 0 33px 0;
     max-width: 690px;
     font-family: Inter;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px;
-text-align: left;
-
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 26px;
+    text-align: left;
 
 }
+/* Список */
 .summary__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 18px;
+    display: flex;
+    flex-direction: column;
+
 }
 .summary__list-item {
+}
+
+.grid-gallery {
+    margin: 0 auto;
+    padding: 92px 0 0 0;
+    width: calc(100% - 96px);
+    display: grid;
+    grid-template-columns: repeat(4, 284px);
+    gap: 16px;
+}
+.grid-gallery__item {
+}
+/* Конец стилей для Grid-gallery */
+
+/* Начало стилей для Location */
+.location {
+    margin: 0 auto;
+    max-width: 984px;
+    width: calc(100% - 148*2);
+}
+.location__cards {
+    display: grid;
+    grid-template-columns: ;
+}
+.card {
+}
+.location__card {
+}
+.card__title {
+}
+.card__image {
+}
+.card__link {
+}
+.card__text {
+}
+.card__paragraph {
 }
