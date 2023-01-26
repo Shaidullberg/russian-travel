@@ -1,3 +1,7 @@
+* {
+  outline: 1px solid violet;
+}
+
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
@@ -176,6 +180,11 @@
   font-weight: 700;
   line-height: 18px;
 }
+
+.summary__span-list {
+  margin: 0;
+  font-weight: 400;
+}
 /* Конец стилей для блока summary */
 
 /* Начало стилей бля блока grid-gallery */
@@ -254,7 +263,7 @@
   text-align: left;
   color: #aaa;
   position: absolute;
-  top: -26px;
+  top: -25px;
   min-height: 12px;
 }
 
@@ -310,7 +319,7 @@
 
 .footer {
   margin: 0 auto;
-  padding: 92px 0 24px 0;
+  padding: 88px 0 24px 0;
   max-width: 1184px;
   box-sizing: border-box;
   width: calc(100% - 48 * 2);
@@ -329,6 +338,7 @@
   column-gap: 18px;
 }
 .navigation__item {
+  margin: 0;
   color: #fff;
   font-size: 16px;
   font-weight: 400;
