@@ -1,7 +1,3 @@
-* {
-  outline: 1px solid violet;
-}
-
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
@@ -72,6 +68,11 @@
   color: #fff;
   font-weight: 400;
   text-decoration: none;
+}
+
+.header__lang-link:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
 }
 
 .header__lang-link_activity {
@@ -214,7 +215,7 @@
   box-sizing: border-box;
 }
 
-.location__cards {
+.card {
   box-sizing: border-box;
   margin: 0;
   display: grid;
@@ -251,6 +252,11 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
+}
+
+.card__link:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
 }
 
 .card__link::before {
@@ -348,10 +354,12 @@
   box-sizing: border-box;
   width: calc(100% - 48 * 2);
 }
+
 .footer__navigation {
   display: flex;
   justify-content: space-between;
 }
+
 .navigation__list {
   list-style: none;
   padding: 0;
@@ -361,6 +369,7 @@
   align-items: center;
   column-gap: 18px;
 }
+
 .navigation__item {
   margin: 0;
   color: #fff;
@@ -369,6 +378,12 @@
   line-height: 18px;
   text-decoration: none;
 }
+
+.navigation__item:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s linear;
+}
+
 .footer__author {
   margin: 0;
   max-width: 208px;
