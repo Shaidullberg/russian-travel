@@ -54,6 +54,12 @@
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .header {
+    max-width: 928px;
+  }
+}
+
 .logo_place_header {
   max-width: 176px;
   min-width: 142px;
@@ -114,6 +120,14 @@
       -ms-flex-align: center;
           align-items: center;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .journey {
+    max-width: 928px;
+    width: calc(100% - 48*2);
+    padding: 48px 0 0 0;
+  }
+}
 /* Заголовок */
 .journey__title {
   margin: 0 0 32px 0;
@@ -132,6 +146,12 @@
   line-height: 36px;
   text-align: center;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .journey__subtitle {
+    margin: 0 0 56px 0;
+  }
+}
 /* Блок с картинкой и подписью*/
 .journey__itinerary {
   margin: 0;
@@ -142,8 +162,6 @@
 .journey__picture {
   margin: 0;
   width: 100%;
-  max-width: 984px;
-  height: auto;
 }
 /* Подпись к картинке */
 .journey__signature {
@@ -175,6 +193,13 @@
   width: calc(100% - 296px);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .summary {
+    max-width: 928px;
+    width: calc(100% - 48*2);
+  }
 }
 /* Стили заголовка */
 .summary__title {
@@ -231,13 +256,22 @@
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 16px 1fr 16px 1fr 16px 1fr;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 284px);
   gap: 16px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .grid-gallery {
+    max-width: 928px;
+    grid-template-columns: repeat(3, 300px);
+    gap: 14px;
+  }
+}
+
 .grid-gallery__item {
-  max-width: 284px;
+  width: 100%;
 }
 /* Конец стилей для Grid-gallery */
 
@@ -259,6 +293,13 @@
           box-sizing: border-box;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .location {
+    max-width: 928px;
+    width: calc(100% - 48*2);
+  }
+}
+
 .card {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -276,6 +317,14 @@
     "title link"
     "image text";
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .card {
+    grid-template-columns: 440px 456px;
+    column-gap: 32px;
+  }
+}
+
 .card__title {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
@@ -359,6 +408,7 @@
   background-repeat: no-repeat;
   position: relative;
   max-width: 1184px;
+  width: calc(100% - 48*2);
   min-height: 740px;
   margin: 0 auto;
   display: -webkit-box;
@@ -367,6 +417,12 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+    .story {
+      
+    }
 }
 
 .story::after {
