@@ -288,6 +288,17 @@
   width: calc(100% - 148 * 2);
   position: relative;
 }
+
+.story__link {
+  margin: 0;
+  text-decoration: none;
+  color: #fff;
+}
+
+.story__link:hover {
+  opacity: 0.5;
+}
+
 .story__picture {
   max-width: 1184px;
   object-fit: cover;
