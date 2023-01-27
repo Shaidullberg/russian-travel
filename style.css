@@ -1,33 +1,30 @@
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/Fonts/Inter-Regular.woff2") format("woff2"),
-       url("/Fonts/Inter-Regular.woff") format("woff");
+  src: url("/Fonts/Inter-Regular.woff2") format("woff2"), url("/Fonts/Inter-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url("/Fonts/Inter-Bold.woff2") format("woff2"),
-       url("/Fonts/Inter-Bold.woff") format("woff");
+  src: url("/Fonts/Inter-Bold.woff2") format("woff2"), url("/Fonts/Inter-Bold.woff") format("woff");
 }
 
 @font-face {
-  font-family: 'Inter';
-  font-style:  normal;
+  font-family: "Inter";
+  font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url("/Fonts/Inter-Black.woff2") format("woff2"),
-       url("/Fonts/Inter-Black.woff") format("woff");
+  src: url("/Fonts/Inter-Black.woff2") format("woff2"), url("/Fonts/Inter-Black.woff") format("woff");
 }
 
 .root {
   margin: 0 auto;
-  font-family: 'Inter', Arial, serif;
+  font-family: "Inter", Arial, serif;
   background-color: #2a2c2f;
   color: white;
   box-sizing: border-box;
@@ -299,18 +296,18 @@
 }
 
 .story::after {
-  content: '';
+  content: "";
   position: absolute;
-  background-color: rgb(42,44,47,0.3);
+  background-color: rgb(42, 44, 47, 0.3);
   width: 100%;
   top: 0;
   left: 0;
   bottom: 0;
-  transition: background-color .1s linear;
+  transition: background-color 0.1s linear;
 }
 
-.story:hover::after{
-  background-color: rgb(42,44,47,0.8);
+.story:hover::after {
+  background-color: rgb(42, 44, 47, 0.8);
 }
 
 .story__link {
@@ -344,7 +341,6 @@
   position: relative;
   text-align: center;
   z-index: 1;
-  
 }
 
 .footer {
@@ -353,6 +349,8 @@
   max-width: 1184px;
   box-sizing: border-box;
   width: calc(100% - 48 * 2);
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__navigation {
@@ -360,7 +358,7 @@
   justify-content: space-between;
 }
 
-.navigation__list {
+.footer__list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -370,7 +368,7 @@
   column-gap: 18px;
 }
 
-.navigation__item {
+.footer__list-item {
   margin: 0;
   color: #fff;
   font-size: 16px;
@@ -379,7 +377,7 @@
   text-decoration: none;
 }
 
-.navigation__item:hover {
+.footer__list-item:hover {
   opacity: 0.5;
   transition: opacity 0.3s linear;
 }
