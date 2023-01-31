@@ -33,6 +33,11 @@
   font-family: "Inter", Arial, serif;
   color: #fff;
   text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
   box-sizing: border-box;
 }
 
@@ -42,6 +47,12 @@
   width: calc(100% - 2*48px);
   display: flex;
   justify-content: space-between;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .header {
+    width: calc(100% - 2*24px);
+  }
 }
 
 .logo {
@@ -90,6 +101,13 @@ max-width: 176px;
   }
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .journey {
+    padding-top: 48px;
+    width: 100%;
+  }
+}
+
 .journey__title {
   max-width: 720px;
   margin: 0 auto;
@@ -106,14 +124,10 @@ max-width: 176px;
   line-height: 36px;
 }
 
-@media screen and (min-width:1024px) and (max-width:1279px) {
+@media screen and (min-width:768px) and (max-width:1279px) {
   .journey__subtitle {
     margin-bottom: 56px;
   }
-}
-
-@media screen and (min-width:1024px) and (max-width:1279px) {
-  
 }
 
 .journey__itinerary {
@@ -133,6 +147,12 @@ max-width: 176px;
   letter-spacing: 1.5px;
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .journey__signature {
+    margin-left: 24px;
+  }
+}
+
 .summary {
   margin: 0 auto;
   padding-top: 92px;
@@ -143,6 +163,13 @@ max-width: 176px;
 @media screen and (min-width:1024px) and (max-width:1279px) {
   .summary {
     width: calc(100% - 2*48px);
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .summary {
+    padding-top: 88px;
+    width: calc(100% - 2*24px);
   }
 }
 
@@ -193,6 +220,12 @@ max-width: 176px;
   width: 100%;
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .grid-gallery {
+    width: calc(100% - 2*24px);
+  }
+}
+
 .location {
   padding-top: 92px;
   margin: 0 auto 92px;
@@ -206,6 +239,16 @@ max-width: 176px;
 @media screen and (min-width:1024px) and (max-width:1279px) {
   .location {
     width: calc(100% - 2*48px);
+    row-gap: 78px;
+  }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+  .location {
+    padding-top: 88px;
+    margin: 0 auto 90px;
+    width: calc(100% - 2*24px);
+    row-gap: 68px;
   }
 }
 
@@ -225,17 +268,34 @@ max-width: 176px;
   font-size: 72px;
   font-weight: 900;
   line-height: 76px;
+  white-space: pre-line;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+  .card__title {
+    font-size: calc(42px + (72 -42) * ((100vw - 768px) / (768)));
+    line-height: calc(46px + (76 -46) * ((100vw - 768px) / (768)));
+  }
+}
+
 .card__image {
   width: 100%;
   grid-area: image;
 }
+
 .card__site {
 display: flex;
 flex-direction: column;
 justify-content: flex-end;
-row-gap: 10px;
+row-gap: 11px;
 }
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .card__site {
+    row-gap: 14px;
+  }
+}
+
 .card__url {
   margin: 0;
   font-size: 12px;
@@ -270,17 +330,22 @@ row-gap: 10px;
   margin: 0;
   font-size: 18px;
   font-weight: 400;
-  line-height: 29px;
+  line-height: 29.34px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .card__paragraph{
+  font-size: 15px;
+  line-height: 26.08px;
+  }
+}
 
 .story {
   margin: 0 auto;
   max-width: 1184px;
-  max-height: 740px;
   background-image: url("/img/railway_station.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
   display: flex;
   position: relative;
 }
@@ -307,13 +372,21 @@ row-gap: 10px;
   flex-direction: column;
   align-self: center;
   max-height: 740px;
-  height: calc(200px + (740 - 200) * ((100vw - 320px) / (1280 - 320)));
+  height: calc(480px + (740 - 480) * ((100vw - 768px) / (1280 - 768)));
   justify-content: center;
   row-gap: 32px;
   text-align: center;
   color: #fff;
   text-decoration: none;
   z-index: 1;
+}
+
+
+@media screen and (min-width:1024px) and (max-width:1279px) {
+  .story__link {
+    min-height: 640px;
+  }
+  
 }
 
 .story__title {
@@ -323,6 +396,7 @@ row-gap: 10px;
   font-weight: 900;
   line-height: 76px;
   z-index: 1;
+  position: relative;
 }
 .story__subtitle {
   max-width: 360px;
@@ -331,6 +405,7 @@ row-gap: 10px;
   font-weight: 400;
   line-height: 22px;
   z-index: 1;
+  position: relative;
 }
 
 .footer {
@@ -341,6 +416,14 @@ row-gap: 10px;
   display: flex;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .footer {
+    padding-top: 88px;
+    width: calc(100% - 2*24px);
+  }
+}
+
 .footer__list {
   margin: 0;
   padding: 0;
