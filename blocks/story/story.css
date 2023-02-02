@@ -1,0 +1,12 @@
+.story {
+  margin: 0 auto;
+  max-width: 1184px;
+  width: 100%;
+  background-image: url("/img/railway_station.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}

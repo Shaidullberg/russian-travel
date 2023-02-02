@@ -1,0 +1,7 @@
+.journey {
+  padding-top: 56px;
+  margin: 0 auto;
+  max-width: 984px;
+  width: calc(100% - 2*148px);
+  text-align: center;
+}

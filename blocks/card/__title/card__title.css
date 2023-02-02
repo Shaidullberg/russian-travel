@@ -1,0 +1,10 @@
+.card__title {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  margin: 0;
+  grid-area: title;
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 76px;
+  white-space: pre-line;
+}

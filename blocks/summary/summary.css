@@ -1,0 +1,6 @@
+.summary {
+  margin: 0 auto;
+  padding-top: 92px;
+  max-width: 984px;
+  width: calc(100% - 2*148px);
+}
