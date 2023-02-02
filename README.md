@@ -21,6 +21,6 @@
 * Реализовать возможность смены языка на странице
 * Добавить формы для комментирования
 
-## [Ссылка на страницу &rarr;](https://verachernushina.github.io/russian-travel/index.html)
+## [Ссылка на страницу &rarr;](https://shaidullberg.github.io/russian-travel/index.html)
 
-## [Макет в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-%2B-mobile?node-id=28503%3A0)
+## [Макет страницы в Figma](https://www.figma.com/file/5S2WSbEFL6awjVWJ0NWL8Q/Sprint-3_-Russia-_-desktop-%2B-mobile?node-id=28503%3A0)
