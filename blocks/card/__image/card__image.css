@@ -3,6 +3,6 @@
   -ms-grid-column: 1;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   grid-area: image;
 }

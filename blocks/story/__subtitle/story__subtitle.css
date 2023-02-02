@@ -7,3 +7,11 @@
   z-index: 1;
   position: relative;
 }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .story__subtitle {
+    font-size: calc(14px + (4 + 4 * 0.7) * ((100vw - 320px) / (768)));
+    line-height: calc(16px + (6 + 6 * 0.7) * ((100vw - 320px) / (768)));
+    white-space: pre-line;
+  }
+}

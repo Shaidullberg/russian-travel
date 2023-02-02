@@ -10,3 +10,10 @@
   line-height: 22px;
   align-self: flex-start;
 }
+
+.card__link:hover {
+  opacity: 0.5;
+  -webkit-transition: opacity 0.3s linear;
+  -o-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear;
+}

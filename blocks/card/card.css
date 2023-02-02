@@ -1,14 +1,30 @@
 .card {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: minmax(340px, 460px) calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768))) minmax(352px, 484px);
+  -ms-grid-columns: minmax(340px, 460px)
+    calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)))
+    minmax(352px, 484px);
   grid-template-columns: minmax(340px, 460px) minmax(352px, 484px);
   -ms-grid-rows: auto 48.5px auto;
-      grid-template-areas: 
-  "title link"
-  "image info";
+  grid-template-areas:
+    "title link"
+    "image info";
   row-gap: 48.5px;
   -webkit-column-gap: calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)));
-     -moz-column-gap: calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)));
-          column-gap: calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)));
+  -moz-column-gap: calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)));
+  column-gap: calc(28px + (40 - 28) * ((100vw - 768px) / (1280 - 768)));
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .card {
+    -ms-grid-columns: minmax(320px, 767px);
+    grid-template-columns: minmax(320px, 767px);
+    row-gap: 32px;
+    -ms-grid-rows: auto 32px auto 32px auto 32px auto;
+    grid-template-areas:
+      "title"
+      "link"
+      "image"
+      "info";
+  }
 }

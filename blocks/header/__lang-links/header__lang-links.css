@@ -6,11 +6,9 @@
   padding: 0;
   list-style: none;
   -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -ms-flex-align: end;
+  align-items: flex-end;
   -webkit-column-gap: 18px;
-     -moz-column-gap: 18px;
-          column-gap: 18px;
-
-
+  -moz-column-gap: 18px;
+  column-gap: 18px;
 }
