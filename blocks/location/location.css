@@ -16,7 +16,7 @@
 @media screen and (min-width: 1024px) and (max-width: 1279px) {
   .location {
     width: calc(100% - 2 * 48px);
-    row-gap: 78px;
+    row-gap: 80px;
   }
 }
 
@@ -34,6 +34,6 @@
     padding-top: 64px;
     margin-bottom: 66px;
     width: calc(100%);
-    row-gap: 46px;
+    row-gap: 48px;
   }
 }

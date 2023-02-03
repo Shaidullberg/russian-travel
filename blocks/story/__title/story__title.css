@@ -10,8 +10,7 @@
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .story__title {
-    font-size: calc(32px + 72 * ((100vw - 320px) / (768)));
-    line-height: calc(35px + 76 * ((100vw - 320px) / (768)));
-    white-space: pre-line;
+    font-size: 32px;
+    line-height: 35px;
   }
 }

@@ -10,8 +10,7 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
-  max-height: 740px;
-  min-height: calc(480px + (740 - 480) * ((100vw - 768px) / (1280 - 768)));
+  min-height: 740px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -28,9 +27,15 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .story__link {
+    min-height: 480px;
+  }
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .story__link {
-    min-height: calc(200px + (640 - 200) * ((100vw - 320px) / (767 - 320)));
+    min-height: 62.5vw;
     row-gap: 16px;
   }
 }
