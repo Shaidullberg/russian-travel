@@ -33,7 +33,7 @@
   .location {
     padding-top: 64px;
     margin-bottom: 66px;
-    width: calc(100%);
+    width: 100%;
     row-gap: 48px;
   }
 }
